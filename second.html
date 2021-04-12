@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+        Basic calculator
+        </title>
+        <style>
+            .main {
+                background: linear-gradient(45deg ,white);
+                padding: 100px;
+                max-width: 20%;
+                margin-left: 30%;
+                margin-top: 10%;
+                box-shadow: 0 10px 30px 0 rgba(0 , 0 , 0 , 1);
+                border-radius: 5%;
+            }
+            .cl button{ 
+                background-color: royalblue;
+
+        }
+            .cl button:hover{
+                background: linear-gradient(35deg,brown,orange);
+                box-shadow: 0 2px 5px 0 rgba(0 , 0 , 0 , 1);
+                background-color: white;
+                cursor: pointer;
+                border-radius: 50%;
+            }
+            h1{
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main">
+        <h1> BASIC CALCULATOR</h1>
+        <div><label>A value</label>
+            <input id ='text1' type="text"></div><br>
+            <div>
+                <label>B value</label>
+                <input id='text2'type="text">
+            </div><br>
+            <div class="cl">
+            <button onclick="addition()">+</button>
+            <button onclick="substract()">-<button>
+            <button onclick="multiplication()">*</button>
+            <button onclick="division()">/</button>
+        </div><br>
+        <div>
+            <label>OUTPUT</label>
+            <input id = 'text3' type="text" disabled>
+        </div>
+        <script src="./sec.js"></script>
+    </div>
+    </body>
+</html>
